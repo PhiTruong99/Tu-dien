@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Từ điển</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //Phát triển một ứng dụng từ điển đơn giản
+            //Ứng dụng cho phép tra cứu các từ tiếng Anh sang tiếng Việt
+            //Danh sách các từ được lưu trữ trong các mảng.//
+            //từ một mảng tiếng anh tương ứng với tiếng việt
+            //khi nhập vào tiếng việt tìm trong mảng tiếng anh tương ứng sau đó in ra
+            let english = ["computer", "art", "music", "family", "map", "world", "data", "love"];
+            let tiengviet = ["máy tính","nghệ thuật","âm nhạc","gia đình","bản đồ","thế giới","dữ liệu","tình yêu"];
+            var Translate;
+            Translate = prompt("Nhập vào từ cần dịch ");
+            var index;
+            for (var i=0;i<=english.length;i++){
+                if(english[i]==Translate){
+                    index=i;
+                    break;
+                }else{
+                    index=-1;
+                }
+            }
+            if(index==i){
+                alert(Translate+" - "+tiengviet[index]);
+            }else{
+                alert("Không có trong từ điển, yêu cầu nhập lại");
+            }
+        </script>
+    </body>
+</html>
